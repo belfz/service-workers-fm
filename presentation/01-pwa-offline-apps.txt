@@ -9,6 +9,3 @@ PWA:
   - capable of handling offline situations (at least to some extent),
   - faster "installation" via pinning to home screen,
   - native-like experience
-
-
-DEMO TIME! Tic-tac-react (offline + pin to home screen): https://belfz.github.io/tic-tac-react/
