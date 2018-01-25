@@ -1,4 +1,4 @@
-- ou don't achieve "offline-first" by simply installing a service worker - it's rather a set of architecture design rules to follow;
-- weird behaviour might occur if the app is cached for offline use, but does not provide any mechanism for intercepting ajax requests;
-- this might result in half-broken app;
+- One does not achieve "offline-first" by simply installing a service worker - it's rather a set of architecture design rules to follow;
+- Weird behaviour might occur if the app is cached for offline use, but does not provide any mechanism for intercepting ajax requests;
+- This might result in half-broken app;
 - Service workers used properly have definitely great advantages. Misused - huge consequences.

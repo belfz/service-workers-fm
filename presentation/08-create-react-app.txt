@@ -1,5 +1,5 @@
 
-A tale of service workers in Create-React-App
+A tale of service workers in Create-React-App:
 - static assets caching service worker (generated with webpack plugin) exists in current version of popular Create-React-App;
 - initially, there were a lot of problems due to mistake - asset-caching service worker installed on localhost - in turn the app
   was running even after the development server was taken down (confused people would even remove node from OS but still see the app

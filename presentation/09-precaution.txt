@@ -1,4 +1,4 @@
-Service worker is like chainsaw. 
+Service worker is like a chainsaw. 
 It's generally an awesome tool, but if not used cautiously, it can cut your (and others') limbs off.
 
 - analogy taken from this talk: https://www.youtube.com/watch?v=CPP9ew4Co0M

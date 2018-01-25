@@ -1,4 +1,4 @@
-Browser "Workers"
+Browser "Workers":
 - Web Worker
 - Service Worker
 
