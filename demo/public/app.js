@@ -23,6 +23,10 @@ sendButton.addEventListener('click', () => {
         result.className = 'result-ok';
         break;
     }
+  })
+  .catch(() => {
+    result.innerText = `Other error occured. Check if the server is running.`;
+    result.className = 'result-warning';
   });
 });
 
