@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Request interceptor</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p>Hello!</p>
-  <button id="send">send data!</button>
-  <p>result: <span id="result"></span></p>
+  <div id="app">
+    <p id="reload-notification" style="display: none;">Newer version of the app is available. Please reload the page.</p>
+    <button id="send">send data!</button>
+    <p>result: <span id="result"></span></p>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>

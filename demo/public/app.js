@@ -1,5 +1,6 @@
 const sendButton = document.getElementById('send');
 const result = document.getElementById('result');
+const reloadNotification = document.getElementById('reload-notification');
 
 sendButton.addEventListener('click', () => {
   fetch('/data', {
@@ -27,6 +28,7 @@ window.addEventListener('load', () => {
 
         registration.addEventListener('updatefound', () => {
           console.log('update for service worker found, please reload');
+          reloadNotification.style.display = 'block';
         });
       })
       .catch(error => {
