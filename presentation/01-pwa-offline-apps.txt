@@ -1,0 +1,14 @@
+Progressive Web Apps, Offline Apps:
+- PWA: https://developers.google.com/web/progressive-web-apps/
+- Offline Apps, Offline-first Apps
+
+PWA:
+- "reliable, fast, engaging"
+- in reality it means:
+  - well-optimized,
+  - capable of handling offline situations (at least to some extent),
+  - faster "installation" via pinning to home screen,
+  - native-like experience
+
+
+DEMO TIME! Tic-tac-react (offline + pin to home screen): https://belfz.github.io/tic-tac-react/

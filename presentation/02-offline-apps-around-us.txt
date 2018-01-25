@@ -1,0 +1,3 @@
+Offline apps around us:
+- lodash docs: https://lodash.com/docs/4.17.4
+- tic-tac-react: https://belfz.github.io/tic-tac-react/
