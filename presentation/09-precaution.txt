@@ -1,0 +1,7 @@
+Service worker is like chainsaw. 
+It's generally an awesome tool, but if not used cautiously, it can cut your (and others') limbs off.
+
+- analogy taken from this talk: https://www.youtube.com/watch?v=CPP9ew4Co0M
+- developers have to be REALLY CAREFUL when using service workers;
+- if used inappropriately, it can "infect" users' browsers and turn the app practically unusable
+- it's very difficult to explain to users how to uninstall such "trojan horse"

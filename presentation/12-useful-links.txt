@@ -1,0 +1,6 @@
+Useful links around PWAs and service workers:
+- service workers - an introduction (Google Developers): https://developers.google.com/web/fundamentals/primers/service-workers/
+- using service workers (MDN): https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
+- is service worker ready?: https://jakearchibald.github.io/isserviceworkerready/
+- 5 awesome Progressive Web Apps: https://deanhume.com/home/blogpost/5-awesome-progressive-web-apps-worth-exploring/10153
+- great talk about "safe" use of service workers & common pitfalls: https://www.youtube.com/watch?v=CPP9ew4Co0M
