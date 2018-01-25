@@ -3,20 +3,28 @@ const isOnLine = () => navigator.onLine; // FOR DEMO PURPOSES ONLY! This propert
 const requestBuffer = {
   _requestQueue: [],
   intervalId: null,
-  pushRequestForRetry (request) {
+  pushRequestForRetry (request, event) {
     this._requestQueue.push(request);
     if (!this.intervalId) {
-      this.start();
+      this.start(event);
     }
   },
-  start () {
-    const retry = () => {
+  start (event) {
+    const retry = async () => {
       if (isOnLine()) {
         console.log('[service worker] connection re-established, retrying with buffered requests');
 
         while (this._requestQueue.length) {
-          fetch(this._requestQueue.shift());
+          await fetch(this._requestQueue.shift());
         }
+        
+        const client = await clients.get(event.clientId);
+        if (client) {
+          client.postMessage({
+            msg: 'Connection re-established; pending requests flushed.'
+          });
+        }
+
         clearTimeout(this.intervalId);
         this.intervalId = null;
       } else {
@@ -31,7 +39,7 @@ const requestBuffer = {
 self.addEventListener('fetch', event => {
   if (!isOnLine()) {
     console.log('[service worker] app is offline - storing a request to retry later');
-    requestBuffer.pushRequestForRetry(event.request.clone());
+    requestBuffer.pushRequestForRetry(event.request.clone(), event);
     event.respondWith(Promise.resolve(new Response({}, { status: 202 }))); // 202 - Accepted
   }
 });

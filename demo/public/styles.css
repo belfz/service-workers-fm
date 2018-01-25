@@ -34,3 +34,17 @@ button:active {
   border: 1px solid black;
   padding: 0.5em;
 }
+
+#result {
+  padding: 0.125em 0.25em;
+}
+
+.result-warning {
+  background-color: orange;
+  border: 1px solid gainsboro;
+}
+
+.result-ok {
+  background-color: greenyellow;
+  border: 1px solid gainsboro;
+}

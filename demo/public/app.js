@@ -12,7 +12,17 @@ sendButton.addEventListener('click', () => {
     body: JSON.stringify({ message: 'ping!' })
   })
   .then(({ status, statusText }) => {
-    result.innerText = `${status} ${statusText}`;
+    switch (status) {
+      case 202:
+        result.innerText = `No connection. Request buffered for retrial when app is online again.`;
+        result.className = 'result-warning';
+        break;
+      case 200:
+      default:
+        result.innerText = `${status} ${statusText}`;
+        result.className = 'result-ok';
+        break;
+    }
   });
 });
 
@@ -34,5 +44,10 @@ window.addEventListener('load', () => {
       .catch(error => {
         console.error('service worker installation failed');
       });
+
+    navigator.serviceWorker.addEventListener('message', event => {
+      result.innerText = event.data.msg;
+      result.className = 'result-ok';
+    });
   }
 });
