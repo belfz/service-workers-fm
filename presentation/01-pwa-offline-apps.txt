@@ -1,6 +1,6 @@
 Progressive Web Apps, Offline Apps:
 - PWA: https://developers.google.com/web/progressive-web-apps/
-- Offline Apps, Offline-first Apps
+- Offline Web Apps, Offline-first Web Apps
 
 PWA:
 - "reliable, fast, engaging"
