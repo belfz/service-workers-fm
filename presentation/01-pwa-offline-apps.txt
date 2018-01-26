@@ -9,3 +9,11 @@ PWA:
   - capable of handling offline situations (at least to some extent),
   - faster "installation" via pinning to home screen,
   - native-like experience
+
+Achieved with:
+- well-designed architecture,
+- caching strategies,
+- engaging animations,
+- graceful degradation,
+- app manifest,
+- service workers
