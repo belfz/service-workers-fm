@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const sendButton = document.getElementById('send');
   const result = document.getElementById('result');
-  const reloadNotification = document.getElementById('reload-notification');
 
   sendButton.addEventListener('click', () => {
     fetch('/data', {
@@ -33,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('load', () => {
+  const reloadNotification = document.getElementById('reload-notification');
+  
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
       .then(registration => {
