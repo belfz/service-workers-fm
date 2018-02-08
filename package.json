@@ -1,12 +1,12 @@
 {
-  "name": "demo",
+  "name": "ServiceWorker demo app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Marcin Baraniecki <marcinbar1@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",

@@ -29,12 +29,6 @@ button:active {
   background-color: rgb(150, 150, 150);
 }
 
-#reload-notification {
-  background-color: greenyellow;
-  border: 1px solid black;
-  padding: 0.5em;
-}
-
 #result {
   padding: 0.125em 0.25em;
 }

@@ -36,6 +36,11 @@ const requestBuffer = {
   }
 }
 
+self.addEventListener('install', event => {
+  // when new version of the sw.js is found, don't wait for anything and swap it immediately
+  self.skipWaiting();
+});
+
 self.addEventListener('fetch', event => {
   if (!isOnLine()) {
     console.log('[service worker] app is offline - storing a request to retry later');

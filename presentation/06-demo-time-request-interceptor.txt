@@ -1,3 +1,0 @@
-DEMO TIME! Request interceptor example.
-`cd ../demo && npm install && npm start`
-http://localhost:3000

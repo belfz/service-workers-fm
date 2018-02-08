@@ -1,8 +1,0 @@
-Service Worker:
-- a script running in the background,
-- can act as programmable network proxy:
-  - capable of caching static assets (like in tic-tac-toe example),
-  - capable of intercepting network requests (example in 'demo' directory),
-
-Either https or localhost (for development) is required.
-
